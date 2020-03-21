@@ -4,7 +4,7 @@
 //= require_tree .
 $(document).ready(function () {
 
-$('select').formSelect();
+$('select').material_select();
 $('.datepicker').datepicker({
    format: 'mmmm dd, yyyy',
     formatSubmit: 'mmmm dd, yyyy',

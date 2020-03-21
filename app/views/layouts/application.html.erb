@@ -68,4 +68,7 @@ src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
   </footer>  
 </body>
 <%= javascript_include_tag "application" %>
+  <% flash.each do |message_type, message| %>
+    <%= javascript_tag "Materialize.toast('#{message}', 4000)" %>
+  <% end %>
 </html>
